@@ -132,17 +132,6 @@
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12K-Ei-9Pf" customClass="MaterialTextField" customModule="lrs_showcase" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="116" width="520" height="35"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="ezw-he-iye"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-yW-tww" customClass="MaterialButton" customModule="lrs_showcase" customModuleProvider="target">
                                         <rect key="frame" x="179" y="201" width="203" height="33"/>
                                         <animations/>
@@ -155,7 +144,21 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0V-tQ-baQ"/>
+                                        </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12K-Ei-9Pf" customClass="MaterialTextField" customModule="lrs_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="116" width="520" height="35"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ezw-he-iye"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,10 +197,34 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VPh-Q9-SlN" secondAttribute="bottom" constant="20" id="qvo-gg-eV1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="KOd-Hh-A2r" id="kGZ-mz-ccr"/>
+                        <outlet property="passwordField" destination="12K-Ei-9Pf" id="ep9-NB-Lcu"/>
+                        <segue destination="t07-YD-7g4" kind="show" identifier="loggedIn" id="5az-0X-uFO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="376" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EgM-NG-BSq">
+            <objects>
+                <viewController id="t07-YD-7g4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3iX-b9-pcK"/>
+                        <viewControllerLayoutGuide type="bottom" id="iog-Pt-sZl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Jn-u1-rWy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzx-Pd-Lbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="368"/>
         </scene>
     </scenes>
     <resources>
