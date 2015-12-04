@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-stacked" translatesAutoresizingMaskIntoConstraints="NO" id="b21-g4-S7w">
-                                <rect key="frame" x="157" y="213" width="287" height="174"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LRS-icon-2014" translatesAutoresizingMaskIntoConstraints="NO" id="b21-g4-S7w">
+                                <rect key="frame" x="213" y="213" width="174" height="174"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="FYc-LE-hdZ"/>
-                                    <constraint firstAttribute="width" constant="287" id="ZUF-6x-jik"/>
+                                    <constraint firstAttribute="width" constant="174" id="ZUF-6x-jik"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-stacked" width="965" height="655"/>
+        <image name="LRS-icon-2014" width="296" height="296"/>
     </resources>
 </document>
