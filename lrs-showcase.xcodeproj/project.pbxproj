@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		650A5C73EBAF2EA945F7511F /* Pods_lrs_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD47F864E8ECAC868447CD /* Pods_lrs_showcase.framework */; };
+		B0B79DCD1C11B32700B386F0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B79DCC1C11B32700B386F0 /* FeedVC.swift */; };
+		B0B79DCF1C11B58400B386F0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B79DCE1C11B58400B386F0 /* PostCell.swift */; };
 		B0BF55971C0F0BBC00707D96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF55961C0F0BBC00707D96 /* AppDelegate.swift */; };
 		B0BF55991C0F0BBC00707D96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF55981C0F0BBC00707D96 /* ViewController.swift */; };
 		B0BF559C1C0F0BBC00707D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BF559A1C0F0BBC00707D96 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		5DAD47F864E8ECAC868447CD /* Pods_lrs_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lrs_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B79DCC1C11B32700B386F0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B0B79DCE1C11B58400B386F0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B0BF55931C0F0BBC00707D96 /* lrs-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lrs-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF55961C0F0BBC00707D96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BF55981C0F0BBC00707D96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "lrs-showcase/ViewController.swift"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BF55981C0F0BBC00707D96 /* ViewController.swift */,
+				B0B79DCC1C11B32700B386F0 /* FeedVC.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -136,6 +141,7 @@
 				B0BF55B41C0F0F4800707D96 /* MaterialView.swift */,
 				B0BF55B91C0F150500707D96 /* MaterialButton.swift */,
 				B0BF55BB1C0FE64500707D96 /* MaterialTextField.swift */,
+				B0B79DCE1C11B58400B386F0 /* PostCell.swift */,
 			);
 			name = View;
 			path = ..;
@@ -317,6 +323,8 @@
 				B0BF55C61C1120CB00707D96 /* DataService.swift in Sources */,
 				B0BF55B51C0F0F4800707D96 /* MaterialView.swift in Sources */,
 				B0BF55991C0F0BBC00707D96 /* ViewController.swift in Sources */,
+				B0B79DCD1C11B32700B386F0 /* FeedVC.swift in Sources */,
+				B0B79DCF1C11B58400B386F0 /* PostCell.swift in Sources */,
 				B0BF55971C0F0BBC00707D96 /* AppDelegate.swift in Sources */,
 				B0BF55B81C0F0FFB00707D96 /* Constants.swift in Sources */,
 				B0BF55BA1C0F150500707D96 /* MaterialButton.swift in Sources */,
